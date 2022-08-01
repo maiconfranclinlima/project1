@@ -1,0 +1,53 @@
+#nameAndTitle {
+    background-color: white;
+    width: 500px;
+    margin: 0 auto; /* Deslocando 0px em margem pra cima e AUTO para regular no centro a ID  da DIV nameAndTitle*/
+    text-align: center;
+}
+#nameAndTitle h1, h2 {
+    margin: 0;
+}
+#header {
+    background-color: rgb(216, 187, 151);
+    margin-top: 50px; /* Margem superior da página.*/
+    margin-bottom: 50px; /* Margem inferior da HEADER.*/
+    font-family: 'Hubballi', cursive;
+}
+h1, h2, h3 {
+    text-transform: uppercase; /* Todas as letras maiúsculas.*/
+}
+#contact, #skills { /*Pegando o valor do ID da lista irá adicionar o estilo somente nessa determinada lista.*/
+    list-style-type: none; /* Escolhendo a opção NONE é para não ficar com nenhum pontinho ma lista.*/
+}
+#contact i, #skills i { /* Nesse caso pegamos a ID Contact para desempenhar que toda tag i da lista com ID conatct irá se alinhar com 30px.*/
+    width: 20px;
+    color: rgb(216, 187, 151);
+}
+/*#skills i {
+    width: 30px;
+    color: rgb(216, 187, 151) ;
+} 
+Poderia ser adicionado mais um estilo para a lista de ID=SKILLS, porém como o estilo e configuração de espaçamento será o mesmo da lista ID=CONTACT, separando-as por vírgula. Como mostrado acima.*/
+#container {
+    display: grid; /* Usamos o valor GRID na propriedade DISPLAY para informar que queremos organizar as colunas e linhas em vertical e horizontal.*/
+    grid-template-columns: 30% auto; /* é uma propriedade que define qual as colunas do GRID. E os valores de 35% e AUTO, vão ter duas colunas, uma com 30% da tela e a outra com o resto da tela.*/
+    grid-column-gap: 10px; /* É o espaçamento das colunas do GRID*/
+}
+#sidebar, #content {
+    display: flex; /* Que é unidirecional para as colunas*/
+    flex-direction: column; /*A direção seja no sentido de uma coluna*/
+    row-gap: 10px; /* Isso informa que a cada linha terá um espaço de 20 pixels */
+}
+.card {
+    border: 1px solid gray;
+    border-radius: 15px; /* Para dar uma quebrada nas extremidades das colunas*/
+    padding: 20px; /* Para dar um espaçamento entre as colunas e o texto*/
+}
+img {
+    margin-left: 120px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
